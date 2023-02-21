@@ -1,0 +1,107 @@
+body {
+	background-color: rgba(255, 235, 205, 0.536);
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+.container {
+	width: 1000px;
+	height: 700px;
+	background-color: white;
+	margin: 0 auto;
+	box-shadow: 4px 4px 53px 0px rgba(255, 215, 171, 0.5);
+	margin-top: 40px;
+	color: rgba(0, 0, 0, 0.736);
+}
+
+.calc__text {
+	padding: 25px 90px;
+	padding-bottom: 50px;
+}
+
+.red {
+	color: red;
+}
+
+.calc-main {
+	display: flex;
+	flex-direction: column;
+	padding-left: 90px;
+}
+
+.calc-main__input {
+	font-size: 20px;
+	border: none;
+	background-color: rgba(255, 235, 205, 0.536);
+	padding: 10px;
+	border-radius: 50px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(0, 0, 0, 0.736);
+	box-shadow: 0px -1px 10px -1px rgba(255, 218, 158, 0.94);
+}
+
+.calc-main__input2 {
+	margin-bottom: 60px;
+}
+
+.calc-main__input:focus-visible {
+	outline: 2px solid rgb(255, 235, 205);
+}
+
+.img {
+	margin-right: 30px
+}
+
+.calc-1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.calc-button {
+	background-color: rgba(255, 235, 205, 0.536);
+	border: none;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(0, 0, 0, 0.736);
+	cursor: pointer;
+	width: 243px;
+	height: 50px;
+	border-radius: 50px;
+	box-shadow: 0px -1px 10px -1px rgba(255, 218, 158, 0.94);
+}
+
+.result-inp {
+	color: black;
+	width: 150px;
+	height: 50px;
+	z-index: 2;
+}
+
+.andriod {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.ko-android {
+	font-size: 100px;
+	margin-left: 100px;
+}
+
+.blue {
+	color: rgb(163, 191, 255);
+}
+
+.green {
+	color: rgb(66, 255, 151);
+}
+
+.yellow {
+	color: yellow;
+}
+
+.dis-none {
+	display: none;
+}

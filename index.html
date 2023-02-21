@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="./app.js" defer></script>
+	<title>Рассчитать BMI</title>
+</head>
+<body>
+	<div class="container">
+		<div class="calc__text">
+			<h1>Рассчитайте индекс массы тела здесь. <span class="red">Следите</span> за своим здоровьем!</h1>
+		</div>
+		<div class="calc-1">
+			<div class="calc">
+				<div class="calc-main">
+					<div class="calc-main__input1">
+						<h3 class="calc-main__input1-text">Введите свой рост:</h3>
+						<input id="height" class="calc-main__input" type="text" placeholder="Рост:">
+						<span>см</span>
+					</div>
+					<div class="calc-main__input2">
+						<h3 class="calc-main__input1-text">Введите свой вес:</h3>
+						<input id="weight" class="calc-main__input" type="text" placeholder="Вес:">
+						<span>кг</span>
+					</div>
+					<button id="button" class="calc-button">Рассчитать</button>
+					<h3>Ваш индекс массы тела:
+						<span id="result" class="result-spn"></span>
+					</h3>
+					<div id="android" class="andriod">
+					</div>
+				</div>
+			</div>
+			<div class="container-img">
+				<img class="img" src="./img/BMI.png" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
