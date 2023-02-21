@@ -3,7 +3,7 @@ let weight = document.getElementById("weight");
 const BUTTON = document.getElementById("button");
 let result = document.getElementById("result");
 
-BUTTON.onclick = function() {
+BUTTON.onclick = function(clickButton) {
 	let bmi = (weight.value / (height.value / 100) ** 2).toFixed(1);
 	result.textContent = bmi;
 	height.value = '';
@@ -20,5 +20,8 @@ BUTTON.onclick = function() {
 		icon.classList.add("yellow");
 	} else {
 		icon.classList.add("red");
+	}
+	div.onclick = function(del) {
+		div.classList.add("dis-none")
 	}
 }
