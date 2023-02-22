@@ -3,7 +3,13 @@ let weight = document.getElementById("weight");
 const BUTTON = document.getElementById("button");
 let result = document.getElementById("result");
 
-BUTTON.onclick = function(clickButton) {
+
+height.addEventListener("keydown", () => {
+	document.querySelector(".ko-android").remove();
+	// koAndroid.remove
+})
+
+BUTTON.onclick = function (clickButton) {
 	let bmi = (weight.value / (height.value / 100) ** 2).toFixed(1);
 	result.textContent = bmi;
 	height.value = '';
@@ -11,6 +17,7 @@ BUTTON.onclick = function(clickButton) {
 	let div = document.getElementById("android");
 	let icon = document.createElement("i");
 	icon.classList.add("bi", "bi-android2", "ko-android");
+	// koAndroid.remove()
 	div.appendChild(icon);
 	if (bmi < 18.5) {
 		icon.classList.add("blue");
@@ -21,7 +28,7 @@ BUTTON.onclick = function(clickButton) {
 	} else {
 		icon.classList.add("red");
 	}
-	div.onclick = function(del) {
-		div.classList.add("dis-none")
-	}
+	// div.onclick = function (del) {
+	// 	div.classList.add("dis-none")
+	// }
 }
